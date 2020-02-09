@@ -179,7 +179,7 @@ function makeBMSTable(info, mark, order) {
 　　　　//$("<td width='1%' akign='center'><a href='http://www.ribbit.xyz/bms/score/view?p=1&md5=" + info[i].md5 + "' target='_blank'>■</a></td>").appendTo(str);
 
         // タイトル
-        $("<td width='25%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
+        $("<td width='30%'>" + "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i].md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
         // アーティスト
         var astr = "";
         if(info[i].url != "" && info[i].url != null) {
@@ -204,7 +204,7 @@ function makeBMSTable(info, mark, order) {
         		astr += "<br />(" + info[i].name_pack + ")";
         	}
         }
-        $("<td width='40%'>" + astr + "</td>").appendTo(str);
+        $("<td width='35%'>" + astr + "</td>").appendTo(str);
         // 差分
         //if(info[i].url_diff != "" && info[i].url_diff != null) {
         	//if(info[i].name_diff != "" && info[i].name_diff != null) {
@@ -222,7 +222,7 @@ function makeBMSTable(info, mark, order) {
         //追加日
         var beforeDate = moment(info[i].add_date, "YYYY-MM-DD");
         var afterDate = beforeDate.format('YYYY/MM/DD');
-        $("<td width='8%'>" + afterDate + "</td>").appendTo(str);
+        $("<td width='10%'>" + afterDate + "</td>").appendTo(str);
         // コメント
         $("<td width='15%'>" + info[i].comment + "</div></td>").appendTo(str);
         str.appendTo(obj);
