@@ -222,7 +222,7 @@ function makeBMSTable(info, mark, order) {
         //追加日
         var beforeDate = moment(info[i].add_date, "YYYY-MM-DD");
         var afterDate = beforeDate.format('YYYY/MM/DD');
-        $("<td width='10%'>" + afterDate + "</td>").appendTo(str);
+        $("<td width='8%'>" + afterDate + "</td>").appendTo(str);
         // コメント
         $("<td width='15%'>" + info[i].comment + "</div></td>").appendTo(str);
         str.appendTo(obj);
